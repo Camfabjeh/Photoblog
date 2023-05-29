@@ -11,6 +11,13 @@ class ArticlesManager extends AbstractManager {
     );
   }
 
+  find(id) {
+    return this.database.query(
+      `select a.title, a.subtitle, a.resume, i.src, i.alt from  ${this.table} as a inner join images as i on i.id = a.image_id where a.id = ?`,
+      [id]
+    );
+  }
+
   insert(articles) {
     return this.database.query(`insert into ${this.table} (title) values (?)`, [
       articles.title,
