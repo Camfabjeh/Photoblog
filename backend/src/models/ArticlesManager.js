@@ -18,10 +18,11 @@ class ArticlesManager extends AbstractManager {
     );
   }
 
-  insert(articles) {
-    return this.database.query(`insert into ${this.table} (title) values (?)`, [
-      articles.title,
-    ]);
+  insert(article, imageId) {
+    return this.database.query(
+      `insert into ${this.table} (title, subtitle, resume, author, image_id) values (?, ?, ?, ?, ?)`,
+      [article.title, article.subtitle, article.resume, article.author, imageId]
+    );
   }
 
   update(articles) {

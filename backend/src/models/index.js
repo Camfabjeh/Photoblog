@@ -39,6 +39,11 @@ const ArticlesManager = require("./ArticlesManager");
 models.articles = new ArticlesManager();
 models.articles.setDatabase(pool);
 
+const ImagesManager = require("./ImagesManager");
+
+models.images = new ImagesManager();
+models.images.setDatabase(pool);
+
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 
