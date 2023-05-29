@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Des clowns à l'hôpital",
+    "subtitle": "Les clowns de l'association le Nez à l'Ouest ont rendu visite aux personnes âgées accueillies à l'EHPAD de la Gaubretière",
+    "resume": "C'est lors de l'été 2020 que j'ai accompagné Sissi et Eugène lors d'une de leurs visites mensuelles auprès des personnes âgées accueillies au sein de l'EHPAD de la Gaubretière, en Vendée",
+    "image": {
+      "src": "https://static.wixstatic.com/media/24e398_7927f5bdc53b4bcc9d820f2d5621f715~mv2.jpg/v1/fill/w_1132,h_756,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/24e398_7927f5bdc53b4bcc9d820f2d5621f715~mv2.jpg",
+      "alt": "Sissi épate une des résidentes de l'EHPAD"
+    },
+    "tags": ["clowns", "EHPAD", "photographie"],
+    "author": "Camille Fabry"
+  },
+  {
+    "id": 2,
+    "title": "Ces mains façonnent (et ça me fascine)",
+    "subtitle": "La céramiste Caroline, de l'atelier Shibumi, explique les gestes à l'une de ses stagiaires",
+    "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "image": {
+      "src": "https://static.wixstatic.com/media/f43047_c38bbd6fa8fa4b57a51945171d40947e~mv2.jpg/v1/fill/w_363,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Shibumi_cours_collectif_novembre_2022_26.jpg",
+      "alt": "Explication des gestes par la céramiste"
+    },
+    "tags": ["céramiste", "stage de céramique", "photographie"],
+    "author": "Camille Fabry"
+  },
+  {
+    "id": 3,
+    "title": "Un aller simple vers le miam",
+    "subtitle": "Mathilde, traiteure pour ma Cantine Buissonnière",
+    "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "image": {
+      "src": "https://static.wixstatic.com/media/df36b9_2e2243de1a1543c9b042d66734b3d44f~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_1903,h_1115,al_c,q_90,usm_1.20_1.00_0.01,enc_auto/df36b9_2e2243de1a1543c9b042d66734b3d44f~mv2_d_6016_4016_s_4_2.jpg",
+      "alt": "Tarte au citron meringuée"
+    },
+    "tags": ["traiteur", "pornfood", "photographie"],
+    "author": "Camille Fabry"
+  }
+]
