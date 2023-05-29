@@ -13,9 +13,24 @@ function ArticleAdmin() {
   const handleArticle = (name, value) => {
     setArticle({ ...article, [name]: value });
   };
+
+  const postArticle = (event) => {
+    event.preventDefault();
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/articles`, {
+      method: "POST",
+      body: JSON.stringify(article),
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((json) => console.info(json))
+      .catch((err) => console.error(err));
+  };
   return (
     <div className="container">
-      <form className="row">
+      <form className="row" onSubmit={(event) => postArticle(event)}>
         <label htmlFor="">
           Titre
           <input
