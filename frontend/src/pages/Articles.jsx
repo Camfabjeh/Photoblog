@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import ArticleCard from "@components/ArticleCard";
-import articles from "@assets/data.json";
+// import articles from "@assets/data.json";
 
 function Articles() {
+  const [articles, setArticles] = useState([]);
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/articles`)
+      .then((res) => res.json())
+      .then((art) => setArticles(art))
+      .catch((err) => console.error(err));
+  }, []);
   return (
     <section className="container">
       <Helmet>
