@@ -50,20 +50,36 @@ const edit = (req, res) => {
     });
 };
 
-const add = (req, res) => {
+const add = async (req, res) => {
   const articles = req.body;
 
+  try {
+    // 1ère étape : insérer une image
+    const image = await models.images.insert(articles.src, articles.alt);
+
+    // 2ème étape : récupérer son id
+    const article = await models.articles.insert(articles, image[0].insertId);
+    // 3ème étape : insérer l'article avec l'id de l'image
+    res
+      .status(201)
+      .json({ ...articles, id: article[0].insertId, image_id: image });
+    // 4ème étape : renvoyer les infos
+  } catch (error) {
+    console.error(error);
+    res.sendStatus(500);
+  }
   // TODO validations (length, format...)
 
-  models.articles
-    .insert(articles)
-    .then(([result]) => {
-      res.location(`/articles/${result.insertId}`).sendStatus(201);
-    })
-    .catch((err) => {
-      console.error(err);
-      res.sendStatus(500);
-    });
+  // models.articles
+  //   .insert(articles)
+  //   .then(([result]) => {
+  //     res.location(`/articles/${result.insertId}`).sendStatus(201);
+  //   })
+  //   .catch((err) => {
+  //     console.error(err);
+  //     res.sendStatus(500);
+  //   });
+  res.sendStatus(201);
 };
 
 const destroy = (req, res) => {
