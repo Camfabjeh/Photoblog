@@ -5,9 +5,10 @@ import articles from "@assets/data.json";
 function Articles() {
   return (
     <section className="container">
-      <div className="row">
-        <ArticleCard article={articles[0]} />
-      </div>
+      <div className="row" />
+      {articles.map((article) => (
+        <ArticleCard article={article} />
+      ))}
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Articles from "./pages/Articles";
+import Articles from "@pages/Articles";
+import OneArticle from "@pages/OneArticle";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Articles />} />
+        <Route path="/articles/:id" element={<OneArticle />} />
       </Routes>
     </BrowserRouter>
   );
